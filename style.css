@@ -9,12 +9,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    
 }
 .navbar {
     background-color: rgb(76, 140, 197);
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 
 }
 
@@ -38,7 +42,8 @@ body {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    background-color: aquamarine;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     height: 900px;
 }
 
@@ -47,7 +52,7 @@ body {
  justify-content: center;
  height: 20px ;
  padding: 30px ;
- background-color: aqua;
+color: white;
 
 }
 
@@ -56,7 +61,7 @@ body {
     flex-direction: column; /* Change the flex direction to stack cards vertically */
     align-items: center;
     width: 400px;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.26);
     gap: 10px; /* Add gap between cards */
     padding: 10px;
   }
@@ -90,15 +95,28 @@ body {
 
 
 .konten-tengah {
-    background-color: pink;
+   /* From https://css.glass */
+background: rgba(255, 255, 255, 0.18);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
     width: 100%;
    align-items: center;
+   padding-bottom: 20px;
 }
 .konten-tengah h2 {
     text-align: center;
 }
 .form-container {
-   background-color: lightcoral;
+   /* From https://css.glass */
+background: rgba(255, 255, 255, 0.18);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
    border: 1px solid #eee;
    border-radius: 10px;
     width: 500px;
@@ -204,12 +222,15 @@ select:focus {
 
   .footer {
     margin-top: 15px;
-    background-color:lightgreen;
-    padding-left: 2px;
+   
+    padding-left: 10px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
     font-size: 25px;
-    color: #ff0d0d74;
+    color: #06000085;
+    margin-top: auto;  
+    bottom: 0;
+    position: absolute;
   }
 
 .artikel p {
@@ -217,9 +238,82 @@ select:focus {
     font-weight: normal;
     padding-left: 3px;
     font-family: Arial, Helvetica, sans-serif;
-    color: blue;
+    color: white;
 }
 
 .artikel h1 {
     padding-left: 3px;
+}
+
+.artikel img {
+  border: 1px solid white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 2px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+.news-card {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 20px;
+}
+
+.news-card img {
+  max-width: 40%;
+  object-fit: cover;
+  padding-left: 12px;
+}
+
+.news-content {
+  padding: 13px;
+}
+
+.news-content h2 {
+  margin-top: 0;
+} 
+
+.news-content p {
+  margin-bottom: 0;
+  color: black;
+}
+
+.news-content a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.artkanan{
+  background-color: blueviolet;
+  color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-left: 20px;
+}
+
+.artkanan h1{
+  text-align: center;
+}
+.artkanan p {
+  color: black;
+  text-decoration:none ;
+  font-size: medium;
+  padding-left: 12px;
+}
+
+.artikel-container {
+  display: flex;
 }
